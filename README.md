@@ -1,89 +1,173 @@
 <p align="center">
-<svg width="100%" height="280" viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg">
-
-  <!-- Background -->
-  <rect width="1200" height="280" fill="#0b0f19"/>
-
-  <!-- Grid Pattern -->
-  <defs>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2937" stroke-width="1"/>
-    </pattern>
-    <!-- Glow -->
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-
-  <!-- Animated Grid -->
-  <rect width="1200" height="280" fill="url(#grid)" opacity="0.25">
-    <animateTransform 
-      attributeName="transform"
-      type="translate"
-      from="0 0"
-      to="40 40"
-      dur="18s"
-      repeatCount="indefinite"/>
-  </rect>
-
-  <!-- Floating Code Snippets -->
-  <text x="150" y="60" font-family="JetBrains Mono" font-size="14" fill="#38bdf8" opacity="0.4">
-    const build = () => scale();
-    <animate attributeName="y" values="60;40;60" dur="10s" repeatCount="indefinite"/>
-  </text>
-
-  <text x="850" y="90" font-family="JetBrains Mono" font-size="14" fill="#38bdf8" opacity="0.3">
-    supabase.auth.session()
-    <animate attributeName="y" values="90;120;90" dur="12s" repeatCount="indefinite"/>
-  </text>
-
-  <text x="300" y="220" font-family="JetBrains Mono" font-size="14" fill="#38bdf8" opacity="0.3">
-    flutter run --release
-    <animate attributeName="y" values="220;200;220" dur="11s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Accent Pulse Line -->
-  <line x1="250" y1="200" x2="950" y2="200"
-        stroke="#38bdf8"
-        stroke-width="2"
-        opacity="0.6">
-    <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/>
-  </line>
-
-  <!-- Name (Cinematic Fade-In) -->
-  <text x="600" y="130"
-        text-anchor="middle"
-        font-family="JetBrains Mono, monospace"
-        font-size="44"
-        fill="#ffffff"
-        letter-spacing="3"
-        opacity="0"
-        filter="url(#softGlow)">
-    Rey Cezar Tigley
-    <animate attributeName="opacity" from="0" to="1" dur="2s" fill="freeze"/>
-  </text>
-
-  <!-- Subtitle -->
-  <text x="600" y="170"
-        text-anchor="middle"
-        font-family="JetBrains Mono, monospace"
-        font-size="18"
-        fill="#38bdf8"
-        letter-spacing="4"
-        opacity="0">
-    FULL-STACK • MOBILE DEVELOPER
-    <animate attributeName="opacity" from="0" to="1" dur="3s" fill="freeze"/>
-  </text>
-
-</svg>
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=18&duration=3000&pause=1000&color=64B5F6&center=true&vCenter=true&width=700&lines=Full-Stack+Web+%26+Mobile+Developer;Flutter+%7C+Firebase+%7C+Dart;Next.js+%7C+Supabase+%7C+TypeScript;Building+Scalable+%26+Purposeful+Systems+%F0%9F%9A%80" />
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+    <defs>
+      <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#050d1a"/>
+        <stop offset="50%" style="stop-color:#091628"/>
+        <stop offset="100%" style="stop-color:#0a1f3d"/>
+      </linearGradient>
+      <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#64b5f6">
+          <animate attributeName="stop-color" values="#64b5f6;#90caf9;#42a5f5;#64b5f6" dur="4s" repeatCount="indefinite"/>
+        </stop>
+        <stop offset="50%" style="stop-color:#90caf9">
+          <animate attributeName="stop-color" values="#90caf9;#42a5f5;#64b5f6;#90caf9" dur="4s" repeatCount="indefinite"/>
+        </stop>
+        <stop offset="100%" style="stop-color:#42a5f5">
+          <animate attributeName="stop-color" values="#42a5f5;#64b5f6;#90caf9;#42a5f5" dur="4s" repeatCount="indefinite"/>
+        </stop>
+      </linearGradient>
+      <linearGradient id="gridFade" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#1a3a5c;stop-opacity:0"/>
+        <stop offset="40%" style="stop-color:#1a3a5c;stop-opacity:0.5"/>
+        <stop offset="100%" style="stop-color:#1a3a5c;stop-opacity:0"/>
+      </linearGradient>
+      <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#64b5f6;stop-opacity:0"/>
+        <stop offset="50%" style="stop-color:#64b5f6;stop-opacity:0.08"/>
+        <stop offset="100%" style="stop-color:#64b5f6;stop-opacity:0"/>
+      </linearGradient>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
+        <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="softglow">
+        <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+        <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="nameglow">
+        <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+        <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <!-- Background -->
+    <rect width="900" height="280" fill="url(#bg)"/>
+    <!-- Scanning line that sweeps top to bottom -->
+    <rect x="0" y="0" width="900" height="60" fill="url(#scanGrad)">
+      <animateTransform attributeName="transform" type="translate" from="0,-60" to="0,280" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Perspective grid lines - horizontal, fade in -->
+    <g stroke="url(#gridFade)" stroke-width="0.8">
+      <line x1="0" y1="160" x2="900" y2="160" opacity="0">
+        <animate attributeName="opacity" values="0;0.18" dur="1.2s" begin="0.3s" fill="freeze"/>
+      </line>
+      <line x1="0" y1="185" x2="900" y2="185" opacity="0">
+        <animate attributeName="opacity" values="0;0.18" dur="1.2s" begin="0.5s" fill="freeze"/>
+      </line>
+      <line x1="0" y1="210" x2="900" y2="210" opacity="0">
+        <animate attributeName="opacity" values="0;0.18" dur="1.2s" begin="0.7s" fill="freeze"/>
+      </line>
+      <line x1="0" y1="235" x2="900" y2="235" opacity="0">
+        <animate attributeName="opacity" values="0;0.18" dur="1.2s" begin="0.9s" fill="freeze"/>
+      </line>
+      <line x1="0" y1="260" x2="900" y2="260" opacity="0">
+        <animate attributeName="opacity" values="0;0.18" dur="1.2s" begin="1.1s" fill="freeze"/>
+      </line>
+    </g>
+    <!-- Perspective grid lines - converging vertical, fade in -->
+    <g stroke="#1e5080" stroke-width="0.7">
+      <line x1="450" y1="155" x2="0"   y2="280" opacity="0"><animate attributeName="opacity" values="0;0.12" dur="1s" begin="0.2s" fill="freeze"/></line>
+      <line x1="450" y1="155" x2="100" y2="280" opacity="0"><animate attributeName="opacity" values="0;0.12" dur="1s" begin="0.3s" fill="freeze"/></line>
+      <line x1="450" y1="155" x2="200" y2="280" opacity="0"><animate attributeName="opacity" values="0;0.12" dur="1s" begin="0.4s" fill="freeze"/></line>
+      <line x1="450" y1="155" x2="300" y2="280" opacity="0"><animate attributeName="opacity" values="0;0.12" dur="1s" begin="0.5s" fill="freeze"/></line>
+      <line x1="450" y1="155" x2="400" y2="280" opacity="0"><animate attributeName="opacity" values="0;0.12" dur="1s" begin="0.6s" fill="freeze"/></line>
+      <line x1="450" y1="155" x2="500" y2="280" opacity="0"><animate attributeName="opacity" values="0;0.12" dur="1s" begin="0.6s" fill="freeze"/></line>
+      <line x1="450" y1="155" x2="600" y2="280" opacity="0"><animate attributeName="opacity" values="0;0.12" dur="1s" begin="0.5s" fill="freeze"/></line>
+      <line x1="450" y1="155" x2="700" y2="280" opacity="0"><animate attributeName="opacity" values="0;0.12" dur="1s" begin="0.4s" fill="freeze"/></line>
+      <line x1="450" y1="155" x2="800" y2="280" opacity="0"><animate attributeName="opacity" values="0;0.12" dur="1s" begin="0.3s" fill="freeze"/></line>
+      <line x1="450" y1="155" x2="900" y2="280" opacity="0"><animate attributeName="opacity" values="0;0.12" dur="1s" begin="0.2s" fill="freeze"/></line>
+    </g>
+    <!-- Twinkling stars -->
+    <g fill="#ffffff">
+      <circle cx="42"  cy="22"  r="1">  <animate attributeName="opacity" values="0.6;0.1;0.8;0.3;0.6"  dur="3.1s" repeatCount="indefinite"/></circle>
+      <circle cx="130" cy="55"  r="0.8"><animate attributeName="opacity" values="0.4;0.9;0.2;0.5;0.4"  dur="4.7s" repeatCount="indefinite"/></circle>
+      <circle cx="780" cy="18"  r="1.2"><animate attributeName="opacity" values="0.7;0.2;0.9;0.4;0.7"  dur="2.9s" repeatCount="indefinite"/></circle>
+      <circle cx="860" cy="60"  r="0.8"><animate attributeName="opacity" values="0.4;0.8;0.1;0.6;0.4"  dur="5.3s" repeatCount="indefinite"/></circle>
+      <circle cx="670" cy="30"  r="1">  <animate attributeName="opacity" values="0.5;0.1;0.7;0.3;0.5"  dur="3.8s" repeatCount="indefinite"/></circle>
+      <circle cx="310" cy="40"  r="0.7"><animate attributeName="opacity" values="0.4;0.9;0.3;0.7;0.4"  dur="6.1s" repeatCount="indefinite"/></circle>
+      <circle cx="520" cy="15"  r="1">  <animate attributeName="opacity" values="0.6;0.2;0.8;0.1;0.6"  dur="4.2s" repeatCount="indefinite"/></circle>
+      <circle cx="200" cy="70"  r="0.6"><animate attributeName="opacity" values="0.3;0.7;0.1;0.5;0.3"  dur="5.6s" repeatCount="indefinite"/></circle>
+      <circle cx="820" cy="90"  r="0.9"><animate attributeName="opacity" values="0.5;0.1;0.8;0.3;0.5"  dur="3.4s" repeatCount="indefinite"/></circle>
+      <circle cx="70"  cy="110" r="0.7"><animate attributeName="opacity" values="0.3;0.8;0.2;0.6;0.3"  dur="4.9s" repeatCount="indefinite"/></circle>
+      <circle cx="740" cy="75"  r="1.1"><animate attributeName="opacity" values="0.6;0.2;0.9;0.4;0.6"  dur="3.7s" repeatCount="indefinite"/></circle>
+      <circle cx="380" cy="25"  r="0.8"><animate attributeName="opacity" values="0.5;0.1;0.7;0.2;0.5"  dur="5.0s" repeatCount="indefinite"/></circle>
+    </g>
+    <!-- Bracket { — slides in from left -->
+    <text font-family="monospace" font-size="72" fill="#1a4a7a" font-weight="bold" opacity="0">
+      <animate attributeName="opacity" values="0;0.35" dur="0.6s" begin="0.8s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="-40,0" to="0,0" dur="0.6s" begin="0.8s" fill="freeze"/>
+      <tspan x="52" y="148">{</tspan>
+    </text>
+    <!-- Bracket } — slides in from right -->
+    <text font-family="monospace" font-size="72" fill="#1a4a7a" font-weight="bold" opacity="0">
+      <animate attributeName="opacity" values="0;0.35" dur="0.6s" begin="0.8s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="40,0" to="0,0" dur="0.6s" begin="0.8s" fill="freeze"/>
+      <tspan x="820" y="148">}</tspan>
+    </text>
+    <!-- Rule above name — expands from center -->
+    <line x1="450" y1="88" x2="450" y2="88" stroke="#1e5f99" stroke-width="0.8" opacity="0.6">
+      <animate attributeName="x1" values="450;200" dur="0.7s" begin="1.0s" fill="freeze"/>
+      <animate attributeName="x2" values="450;700" dur="0.7s" begin="1.0s" fill="freeze"/>
+    </line>
+    <!-- Label above name — fades in -->
+    <text x="450" y="82" font-family="monospace" font-size="10" fill="#4a90c4" text-anchor="middle" letter-spacing="4" opacity="0">
+      <animate attributeName="opacity" values="0;0.8" dur="0.8s" begin="1.1s" fill="freeze"/>
+      // FULL-STACK · MOBILE · SYSTEMS
+    </text>
+    <!-- Main name — fades + rises in, then pulses glow -->
+    <text x="450" y="148" font-family="Georgia, serif" font-size="54" fill="url(#nameGrad)" text-anchor="middle" font-weight="bold" filter="url(#nameglow)" letter-spacing="2" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="1s" begin="1.3s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" from="0,12" to="0,0" dur="1s" begin="1.3s" fill="freeze"/>
+      Rey Cezar Tigley
+    </text>
+    <!-- Rule below name — expands from center -->
+    <line x1="450" y1="162" x2="450" y2="162" stroke="#1e5f99" stroke-width="0.8" opacity="0.6">
+      <animate attributeName="x1" values="450;200" dur="0.7s" begin="1.6s" fill="freeze"/>
+      <animate attributeName="x2" values="450;700" dur="0.7s" begin="1.6s" fill="freeze"/>
+    </line>
+    <!-- Subtitle — fades in -->
+    <text x="450" y="192" font-family="monospace" font-size="13.5" fill="#64b5f6" text-anchor="middle" letter-spacing="1" opacity="0">
+      <animate attributeName="opacity" values="0;0.9" dur="0.8s" begin="1.9s" fill="freeze"/>
+      Flutter  ·  Next.js  ·  Supabase  ·  Firebase  ·  TypeScript
+    </text>
+    <!-- Tagline — fades in -->
+    <text x="450" y="222" font-family="Georgia, serif" font-size="12" fill="#7bafd4" text-anchor="middle" font-style="italic" opacity="0">
+      <animate attributeName="opacity" values="0;0.75" dur="0.8s" begin="2.2s" fill="freeze"/>
+      Building scalable systems with purpose — Iligan City, PH
+    </text>
+    <!-- Bottom full rule -->
+    <line x1="0" y1="270" x2="900" y2="270" stroke="#1e5f99" stroke-width="1.5" opacity="0.4" filter="url(#softglow)"/>
+    <!-- Bottom center accent — expands and pulses -->
+    <line x1="450" y1="270" x2="450" y2="270" stroke="#64b5f6" stroke-width="2" filter="url(#glow)">
+      <animate attributeName="x1" values="450;320" dur="0.6s" begin="2.4s" fill="freeze"/>
+      <animate attributeName="x2" values="450;580" dur="0.6s" begin="2.4s" fill="freeze"/>
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" begin="3s" repeatCount="indefinite"/>
+    </line>
+    <!-- Corner TL — draws in -->
+    <polyline points="18,42 18,18 42,18" fill="none" stroke="#2a6fa8" stroke-width="1.5" opacity="0"
+      stroke-dasharray="50" stroke-dashoffset="50">
+      <animate attributeName="stroke-dashoffset" values="50;0" dur="0.5s" begin="0.4s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;0.6" dur="0.1s" begin="0.4s" fill="freeze"/>
+    </polyline>
+    <!-- Corner TR — draws in -->
+    <polyline points="858,18 882,18 882,42" fill="none" stroke="#2a6fa8" stroke-width="1.5" opacity="0"
+      stroke-dasharray="50" stroke-dashoffset="50">
+      <animate attributeName="stroke-dashoffset" values="50;0" dur="0.5s" begin="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;0.6" dur="0.1s" begin="0.5s" fill="freeze"/>
+    </polyline>
+    <!-- Corner BL — draws in -->
+    <polyline points="18,238 18,262 42,262" fill="none" stroke="#2a6fa8" stroke-width="1.5" opacity="0"
+      stroke-dasharray="50" stroke-dashoffset="50">
+      <animate attributeName="stroke-dashoffset" values="50;0" dur="0.5s" begin="0.6s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;0.6" dur="0.1s" begin="0.6s" fill="freeze"/>
+    </polyline>
+    <!-- Corner BR — draws in -->
+    <polyline points="858,262 882,262 882,238" fill="none" stroke="#2a6fa8" stroke-width="1.5" opacity="0"
+      stroke-dasharray="50" stroke-dashoffset="50">
+      <animate attributeName="stroke-dashoffset" values="50;0" dur="0.5s" begin="0.7s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;0.6" dur="0.1s" begin="0.7s" fill="freeze"/>
+    </polyline>
+  </svg>
 </p>
 
 <p align="center">
@@ -106,9 +190,27 @@ I'm a **BS Information Systems** student based in the **Philippines**, passionat
 - 🗺️ Currently developing a tourism & mobility platform for Iligan City
 - 🔍 Interested in smart systems, geospatial UX, and design thinking methodologies
 
+---
+
+## 🔨 Currently Building
+
+| Project | Status | What I'm working on |
+|---|---|---|
+| 🗺️ **TourEase** | 🟡 In Progress | Interactive map, geospatial routing & destination UI for Iligan City |
+| 🛺 **TriGoRide** | 🟡 In Progress | Ride-hailing MVP — driver matching & booking flow |
+
+---
+
 ## 🎧 Now Playing
 
-[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=9ca2xq33um7vpssfseb56lf5g&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=true)](https://github.com/kittinan/spotify-github-profile)
+<p align="center">
+  <a href="https://spotify-github-profile.kittinan.dev/redirect?uid=YOUR_SPOTIFY_UID">
+    <img src="https://spotify-github-profile.kittinan.dev/api?uid=YOUR_SPOTIFY_UID&cover_image=true&theme=novatorem&show_offline=false&background_color=0d1117&interchange=false&bar_color=64b5f6&bar_color_cover=true" alt="Spotify Now Playing" />
+  </a>
+</p>
+
+> ⚙️ **To activate:** Visit [spotify-github-profile.kittinan.dev](https://spotify-github-profile.kittinan.dev), log in with Spotify, copy your UID, and replace both instances of `YOUR_SPOTIFY_UID` above with it.
+
 ---
 
 ## 🛠 Tech Stack
@@ -202,5 +304,27 @@ I'm a **BS Information Systems** student based in the **Philippines**, passionat
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f3460,50:0d2137,100:0a0f1e&height=120&section=footer"/>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 80" width="900" height="80">
+    <defs>
+      <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#050d1a"/>
+        <stop offset="50%" style="stop-color:#091628"/>
+        <stop offset="100%" style="stop-color:#050d1a"/>
+      </linearGradient>
+      <filter id="fglow">
+        <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+        <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <rect width="900" height="80" fill="url(#footerBg)"/>
+    <!-- Top accent -->
+    <line x1="0" y1="1" x2="900" y2="1" stroke="#1e5f99" stroke-width="1" opacity="0.35"/>
+    <line x1="310" y1="1" x2="590" y2="1" stroke="#64b5f6" stroke-width="2" opacity="0.7" filter="url(#fglow)"/>
+    <!-- Corner marks -->
+    <polyline points="18,14 18,32 36,32" fill="none" stroke="#2a6fa8" stroke-width="1.2" opacity="0.5"/>
+    <polyline points="882,14 882,32 864,32" fill="none" stroke="#2a6fa8" stroke-width="1.2" opacity="0.5"/>
+    <!-- Tagline -->
+    <text x="450" y="38" font-family="monospace" font-size="10" fill="#4a90c4" text-anchor="middle" letter-spacing="3" opacity="0.7">// BUILT WITH PURPOSE · ILIGAN CITY, PH</text>
+    <text x="450" y="58" font-family="Georgia, serif" font-size="11" fill="#3a7ab8" text-anchor="middle" font-style="italic" opacity="0.5">Rey Cezar Tigley · github.com/Zaimoo</text>
+  </svg>
 </p>
