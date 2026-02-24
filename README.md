@@ -1,5 +1,85 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0f1e,40:0d2137,100:0f3460&height=220&section=header&text=Rey%20Cezar%20Tigley&fontSize=42&fontColor=ffffff&animation=fadeIn&desc=Full-Stack%20%7C%20Mobile%20Developer&descSize=18&descAlignY=72&descColor=64b5f6" />
+<svg width="100%" height="280" viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1200" height="280" fill="#0b0f19"/>
+
+  <!-- Grid Pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2937" stroke-width="1"/>
+    </pattern>
+    <!-- Glow -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Animated Grid -->
+  <rect width="1200" height="280" fill="url(#grid)" opacity="0.25">
+    <animateTransform 
+      attributeName="transform"
+      type="translate"
+      from="0 0"
+      to="40 40"
+      dur="18s"
+      repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Floating Code Snippets -->
+  <text x="150" y="60" font-family="JetBrains Mono" font-size="14" fill="#38bdf8" opacity="0.4">
+    const build = () => scale();
+    <animate attributeName="y" values="60;40;60" dur="10s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="850" y="90" font-family="JetBrains Mono" font-size="14" fill="#38bdf8" opacity="0.3">
+    supabase.auth.session()
+    <animate attributeName="y" values="90;120;90" dur="12s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="300" y="220" font-family="JetBrains Mono" font-size="14" fill="#38bdf8" opacity="0.3">
+    flutter run --release
+    <animate attributeName="y" values="220;200;220" dur="11s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Accent Pulse Line -->
+  <line x1="250" y1="200" x2="950" y2="200"
+        stroke="#38bdf8"
+        stroke-width="2"
+        opacity="0.6">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Name (Cinematic Fade-In) -->
+  <text x="600" y="130"
+        text-anchor="middle"
+        font-family="JetBrains Mono, monospace"
+        font-size="44"
+        fill="#ffffff"
+        letter-spacing="3"
+        opacity="0"
+        filter="url(#softGlow)">
+    Rey Cezar Tigley
+    <animate attributeName="opacity" from="0" to="1" dur="2s" fill="freeze"/>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="170"
+        text-anchor="middle"
+        font-family="JetBrains Mono, monospace"
+        font-size="18"
+        fill="#38bdf8"
+        letter-spacing="4"
+        opacity="0">
+    FULL-STACK • MOBILE DEVELOPER
+    <animate attributeName="opacity" from="0" to="1" dur="3s" fill="freeze"/>
+  </text>
+
+</svg>
 </p>
 
 <p align="center">
