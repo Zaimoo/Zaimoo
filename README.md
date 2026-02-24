@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./header.svg" alt="Rey Cezar Tigley" width="900" />
+  <img src="./header.svg" alt="Rey Cezar Tigley" width="1200" />
 </p>
 <p align="center">
   <a href="mailto:reycezartigley@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white"/></a>&nbsp;
@@ -34,14 +34,7 @@ I'm a **BS Information Systems** student based in the **Philippines**, passionat
 
 ## 🎧 Now Playing
 
-<p align="center">
-  <a href="https://spotify-github-profile.kittinan.dev/redirect?uid=YOUR_SPOTIFY_UID">
-    <img src="https://spotify-github-profile.kittinan.dev/api?uid=YOUR_SPOTIFY_UID&cover_image=true&theme=novatorem&show_offline=false&background_color=0d1117&interchange=false&bar_color=64b5f6&bar_color_cover=true" alt="Spotify Now Playing" />
-  </a>
-</p>
-
-> ⚙️ **To activate:** Visit [spotify-github-profile.kittinan.dev](https://spotify-github-profile.kittinan.dev), log in with Spotify, copy your UID, and replace both instances of `YOUR_SPOTIFY_UID` above with it.
-
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=9ca2xq33um7vpssfseb56lf5g&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=true)](https://github.com/kittinan/spotify-github-profile)
 ---
 
 ## 🛠 Tech Stack
@@ -135,27 +128,5 @@ I'm a **BS Information Systems** student based in the **Philippines**, passionat
 ---
 
 <p align="center">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 80" width="900" height="80">
-    <defs>
-      <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#050d1a"/>
-        <stop offset="50%" style="stop-color:#091628"/>
-        <stop offset="100%" style="stop-color:#050d1a"/>
-      </linearGradient>
-      <filter id="fglow">
-        <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-        <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-      </filter>
-    </defs>
-    <rect width="900" height="80" fill="url(#footerBg)"/>
-    <!-- Top accent -->
-    <line x1="0" y1="1" x2="900" y2="1" stroke="#1e5f99" stroke-width="1" opacity="0.35"/>
-    <line x1="310" y1="1" x2="590" y2="1" stroke="#64b5f6" stroke-width="2" opacity="0.7" filter="url(#fglow)"/>
-    <!-- Corner marks -->
-    <polyline points="18,14 18,32 36,32" fill="none" stroke="#2a6fa8" stroke-width="1.2" opacity="0.5"/>
-    <polyline points="882,14 882,32 864,32" fill="none" stroke="#2a6fa8" stroke-width="1.2" opacity="0.5"/>
-    <!-- Tagline -->
-    <text x="450" y="38" font-family="monospace" font-size="10" fill="#4a90c4" text-anchor="middle" letter-spacing="3" opacity="0.7">// BUILT WITH PURPOSE · ILIGAN CITY, PH</text>
-    <text x="450" y="58" font-family="Georgia, serif" font-size="11" fill="#3a7ab8" text-anchor="middle" font-style="italic" opacity="0.5">Rey Cezar Tigley · github.com/Zaimoo</text>
-  </svg>
+  <img src="./footer.svg" alt="Footer" width="1200"/>
 </p>
