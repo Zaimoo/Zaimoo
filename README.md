@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./header.svg?v=1" alt="Rey Cezar Tigley" width="900" />
+  <img src="./header.svg" alt="Rey Cezar Tigley" width="900" />
 </p>
 <p align="center">
   <a href="mailto:reycezartigley@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white"/></a>&nbsp;
