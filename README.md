@@ -28,8 +28,7 @@ I'm a **BS Information Systems** student based in the **Philippines**, passionat
 
 ## 🎧 Now Playing
 
-[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=9ca2xq33um7vpssfseb56lf5g&cover_image=false&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color_cover=false)](https://github.com/kittinan/spotify-github-profile)
-
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=9ca2xq33um7vpssfseb56lf5g&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=true)](https://github.com/kittinan/spotify-github-profile)
 ---
 
 ## 🛠 Tech Stack
