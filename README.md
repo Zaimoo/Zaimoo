@@ -27,8 +27,7 @@ I'm a **BS Information Systems** student based in the **Philippines**, passionat
 
 | Project | Status | What I'm working on |
 |---|---|---|
-| 🗺️ **TourEase** | 🟡 In Progress | Interactive map, geospatial routing & destination UI for Iligan City |
-| 🛺 **TriGoRide** | 🟡 In Progress | Ride-hailing MVP — driver matching & booking flow |
+| STUDYING/REVIEWING | 🟡 In Progress | Trying to review everything I learned from college, and picking up new skills on the way. |
 
 ---
 
